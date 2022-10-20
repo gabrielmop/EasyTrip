@@ -1,0 +1,7 @@
+﻿Classe Aplicativo:
+Troquei o Metodo ConfirmarNomeUsuario de protected pra public, se não eu não conseguia acessar
+
+
+Classe Viagem:
+Metodo escolherCarro, aceitarCorrida e cancelarCorrida Troquei pra Public, se não eu não conseguia acessar
+Troquei a escolherCarro pra string pra ficar mais facil e mais bonito
