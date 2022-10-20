@@ -46,7 +46,7 @@ namespace AppTransporte
         public string EscolherCarro()
         {
            string Resposta;
-            Console.WriteLine("Escolha o tipo de carro: 1 para EasyTrip e 2 para EasyConfort. Digite /help saber mais");
+            Console.WriteLine("Escolha o tipo de carro: 1 para EasyTrip e 2 para EasyConfort");
             Resposta = Console.ReadLine();
             if (Resposta == "1")
             {
