@@ -30,6 +30,19 @@ namespace AppTransporte
             return EnderecoAtual;
         }
 
+        public string ConfirmarDestino()
+        {
+            string Resposta;
+            do
+            {
+                Console.WriteLine("Por Favor, Digite Seu Endereço de Destino: ");
+                destino = Console.ReadLine();
+                Console.WriteLine($"Seu Endereço de Destino é {destino}, isso está certo? Digite s ou n");
+                Resposta = Console.ReadLine();
+            } while (Resposta == "n");
+            return $"Endereço de Destino Confirmado como:  {destino}";
+        }
+
         public string EscolherCarro()
         {
            string Resposta;
@@ -59,17 +72,17 @@ namespace AppTransporte
                 return false;
         }
 
-        public bool CancelarCorrida()
+        public string CancelarCorrida()
         {
             string Resposta;
             Console.WriteLine("Você quer cancelar essa corrida? digite s ou n");
             Resposta = Console.ReadLine();
             if (Resposta == "s")
             {
-                return true;
+                return "Que pena! Esperamos que a EasyTrip possa te ajudar numa próxima vez!";
             }
             else
-                return false;
+                return "Obrigado por confiar na EasyTrip! Esperamos que faça uma Boa Viagem!";
         }
     }
 }
