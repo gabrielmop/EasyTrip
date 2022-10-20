@@ -60,16 +60,17 @@ namespace AppTransporte
 
         }
 
-        public bool AceitarCorrida()
+        public string AceitarCorrida()
         {
             string Resposta;
             Console.WriteLine("Você aceita essa corrida? digite s ou n");
             Resposta = Console.ReadLine();
             if (Resposta == "s")
             {
-                return true;
-            }else 
-                return false;
+                return "Obrigado por confiar na EasyTrip! Esperamos que faça uma Boa Viagem!";
+            }
+            else 
+                return "Que pena! Esperamos que a EasyTrip possa te ajudar numa próxima vez!";
         }
 
         public string CancelarCorrida()
