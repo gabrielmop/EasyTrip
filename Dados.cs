@@ -14,33 +14,24 @@ namespace AppTransporte
        
         public string ConfirmarEndereçoAtual()
         {
-            string Resposta;
-
-            {
-                do
-                {
+                               
                     Console.WriteLine($"Por favor digite seu endereço atual: ");
                     EnderecoAtual = Console.ReadLine();
-                    Console.WriteLine("Está Correto?(s/n)");
-                    Resposta = Console.ReadLine();
-                } while (Resposta != "s");
-            }
-            return ("");
+
+
+                   return "";
+
+           
+             
+           
         }
         public string ConfirmarDestino()
         {
-            string Resposta;
-
-            {
-                do
-                {
+                       
                     Console.WriteLine($"Por favor confirme seu endereço de destino: ");
                     destino = Console.ReadLine();
-                    Console.WriteLine("Está Correto?(s/n)");
-                    Resposta = Console.ReadLine();
-                } while (Resposta != "s");
-            }
-            return ("");
+
+                   return "";           
         }
     }
 }

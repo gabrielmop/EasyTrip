@@ -20,13 +20,10 @@ namespace AppTransporte
             public string ConfirmarNomeUsuario()
         {
             string Resposta;
-            do
-            {
+                      
                 Console.WriteLine("Digite seu Nome de Usuário: "); 
                 NomeUsuario = Console.ReadLine();
-                Console.WriteLine($"Seu nome de Usuario é {NomeUsuario}, isso está certo? Digite s ou n");
-                Resposta = Console.ReadLine();
-            } while (Resposta == "n");
+                          
             return $"Seja Bem vindo ao EasyTrip {NomeUsuario}";
            
            
